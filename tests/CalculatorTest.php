@@ -20,11 +20,15 @@ class CalculatorTest extends TestCase
     /**
      * @return array<string,array<int,mixed>>
      */
-    public function dataProvider(): array
+    public static function dataProvider(): array
     {
         return [
             '1 + 1' => [
                 '1 + 1',
+                2,
+            ],
+            '1 + 2 - 1' => [
+                '1 + 2 - 1',
                 2,
             ],
         ];
